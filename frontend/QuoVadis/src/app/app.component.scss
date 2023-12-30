@@ -1,0 +1,66 @@
+:root {
+    --qv-global-header-height: 30px;
+}
+.global-header {
+    width: 100%;
+    padding: 2.5px;
+    background-color: var(--qv-crimson);
+    max-height: var(--qv-global-header-height);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.middle-align-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    #qv-logo {
+        height: 75px;
+        transition: all ease-in-out 0.5s;
+        &:hover {
+            height: 100px;
+            transition: all ease-in-out 0.5s;
+        }
+    }
+}
+.global-header-end {
+    display: flex;
+    flex-grow: 3;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 50px;
+    .middle-buttons-wrapper {
+        display:none;
+        @media screen and (min-width: 750px) {
+            display: block;
+        }
+    }
+    .middle-buttons{
+        display: flex;
+        justify-content: flex-start;
+        margin-right: 20px;
+        .btn {
+            margin-left: 10px;
+            height: 1.2em;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            text-wrap: nowrap;
+        }
+    }
+    .logo-container{
+        padding: 10px;
+    }
+    .login-container {
+        display: flex;
+        justify-content: flex-end;
+        background-color: var(--qv-gold);
+    }
+}

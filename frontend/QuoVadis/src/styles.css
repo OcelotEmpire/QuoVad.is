@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --qv-crimson: firebrick;
+    --qv-gold: goldenrod;
+}
+body, html {
+    margin: 0px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body {
+    background-image: url('assets/images/background.jpg');
+    font-family: 'Comic Sans MS', 'cursive';
+}
+
+.btn{
+	display:inline-block;
+    text-align: center;
+	margin: 5px auto;
+	box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+	background-image: url('assets/images/gui/button.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	image-rendering: pixelated; /* Universal support since 2021 */
+	padding: .5em 1em;
+	color:black;
+    text-decoration: none;
+    cursor:pointer;
+
+    &:hover{
+        background-image: url('assets/images/gui/button_hover.png');
+        color: white;
+    }
+    &:active{
+        background-image: url('assets/images/gui/button_disabled.png');
+        color: black;
+        transform: translate(-2px, 5px);
+        box-shadow: -3px 0px 5px black;
+    }
+    &:disabled {
+        background-image: url('assets/images/gui/button_disabled.png');
+        color: white;
+        transform: translate(-2px, 5px);
+        box-shadow: none;
+        cursor:default;
+    }
+}
