@@ -24,9 +24,11 @@
     #qv-logo {
         height: 75px;
         transition: all ease-in-out 0.5s;
-        &:hover {
-            height: 100px;
-            transition: all ease-in-out 0.5s;
+        @media (hover: hover) {
+            &:hover {
+                height: 100px;
+                transition: all ease-in-out 0.5s;
+            }
         }
     }
 }
