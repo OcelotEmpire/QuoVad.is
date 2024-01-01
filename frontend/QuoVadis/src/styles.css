@@ -45,3 +45,9 @@ body {
         cursor:default;
     }
 }
+hr {
+	height: 3px;
+	border: 1px solid yellow;
+	background-color: red;
+	clear: both;
+}

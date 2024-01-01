@@ -1,7 +1,7 @@
 import { RxStompConfig } from "@stomp/rx-stomp";
 
 const _wsConfig: RxStompConfig = {
-    brokerURL: 'ws://localhost:4200/play/ws',
+    brokerURL: 'ws://localhost:4200/play/room',
     connectHeaders: {},
     heartbeatIncoming: 0,
     heartbeatOutgoing: 20000,

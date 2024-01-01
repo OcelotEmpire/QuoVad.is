@@ -5,8 +5,10 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './host.component.html',
-  styleUrl: './host.component.css'
+  styleUrl: './host.component.scss'
 })
 export class HostComponent {
-
+  public sendMessage() {
+    console.log("Message!");
+  }
 }
